@@ -1,0 +1,17 @@
+
+
+if [ "$#" -ne 1 ]; then
+    echo "Need to set a number of seconds before clicking"
+    exit 1
+fi
+
+
+echo Position Mouse at the point you want clicked - Will click in $1 seconds
+
+sleep $1
+~/cliclick c:.
+
+
+
+
+
